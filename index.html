@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IT Projects</title>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/journal/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">Eric's <span class="text-primary">IT Projects </span><i class="fas fa-clipboard-list"></i></h1>
+        <form action="" id="project-form">
+            <div class="form-group">
+                <label for="projectID">Project-ID</label>
+                <input type="text" id="projectID" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="projectName">Project-Name</label>
+                <input type="text" id="projectName" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="startDate">Start-Date</label>
+                <input type="text" id="startDate" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="targetEnd">Target-End-Date</label>
+                <input type="text" id="targetEnd" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="actualEnd">Actual-End-Date</label>
+                <input type="text" id="actualEnd" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="createdOn">Created-On</label>
+                <input type="text" id="createdOn" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="createdBy">Created-By</label>
+                <input type="text" id="createdBy" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="modifiedOn">Modified-On</label>
+                <input type="text" id="modifiedOn" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="modifiedBy">Modified-By</label>
+                <input type="text" id="modifiedBy" class="form-control">
+            </div>
+            <input type="submit" value="Add Project" class="btn btn-primary btn-block">
+            <table class="table table-striped mt-5">
+                <thead>
+                    <tr>
+                        <th>Project ID</th>
+                        <th>Project Name</th>
+                        <th>Start Date</th>
+                        <th>Target End Date</th>
+                        <th>Actual End Date</th>
+                        <th>Created On</th>
+                        <th>Created By</th>
+                        <th>Modified On</th>
+                        <th>Modified By</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="project-list"></tbody>
+            </table>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
